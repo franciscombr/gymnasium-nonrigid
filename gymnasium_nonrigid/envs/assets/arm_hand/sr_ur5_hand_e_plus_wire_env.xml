@@ -1,0 +1,35 @@
+
+<mujoco>
+<size njmax="8000" nconmax="4000"/>
+    <include file="shared_options.xml" />
+    
+    <include file="sr_hand_e_options.xml" />
+    <include file="shared_ur5_options.xml" />
+    <asset>
+        <include file="shared_assets.xml" />
+        <include file="shared_assets_ur5.xml" />
+    </asset>
+    <worldbody>
+        <geom condim="3" material="mat_plane" name="floor" pos="0 0 0" size="5 5 0.001" type="plane" />
+        <body name="floor" pos="0 0 0" />
+        <include file="robot_ur5_hand_e_plus_model.xml" />
+        <light ambient="0.2 0.2 0.2" castshadow="false" diffuse="0.8 0.8 0.8" dir="0 0 -1" directional="true" name="light0" pos="0 0 4" specular="0.3 0.3 0.3" />
+        
+        
+        <body name="support" pos="0 0.7 0.05">
+            <geom type="box" size="0.01 0.05 0.05" pos="-0.1 0 0"/>
+            <geom type="box" size="0.01 0.05 0.05" pos="0.1 0 0"/>
+        </body>
+        
+        <body name="AB10" pos="0 0.7 0.2" quat="1 -1 0 0">
+            <freejoint/>
+            <geom type="cylinder" size=".011 .005" quat="1 0 1 0" />
+            <geom type="cylinder" size=".015 .001" pos="0 .01 0" quat="1 1 0 0"/>
+            <geom type="cylinder" size=".005 .01" pos="0 .011 0" quat="1 1 0 0"/>
+            <composite prefix="A" type="rope" count="21 1 1" spacing="0.03" offset="0 0 2" >
+                <joint kind="main" stiffness="0.05" damping="0.005" />
+                <geom type="capsule" size=".01 .01" rgba="0 0 0 1" friction="1 1 1 "/>
+            </composite>
+        </body>    
+    </worldbody>
+</mujoco>

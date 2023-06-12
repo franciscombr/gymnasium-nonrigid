@@ -1,0 +1,17 @@
+<mujoco>
+    <actuator>
+        <position name="ra_shoulder_pan_joint"  kp="1000" joint="ra_shoulder_pan_joint"   ctrllimited="true" ctrlrange="-6.28319 6.28319" />
+        <position name="ra_shoulder_lift_joint" kp="10000" joint="ra_shoulder_lift_joint"  ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <position name="ra_elbow_joint"         kp="1000" joint="ra_elbow_joint"          ctrllimited="true" ctrlrange="-3.14159 3.14159"/>
+        <position name="ra_wrist_1_joint"       kp="1000" joint="ra_wrist_1_joint"        ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <position name="ra_wrist_2_joint"       kp="1000" joint="ra_wrist_2_joint"        ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <position name="ra_wrist_3_joint"       kp="1000" joint="ra_wrist_3_joint"        ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <velocity name="ra_shoulder_pan_joint_d"  kv="10" joint="ra_shoulder_pan_joint"   ctrllimited="true" ctrlrange="-6.28319 6.28319" />
+        <velocity name="ra_shoulder_lift_joint_d" kv="10" joint="ra_shoulder_lift_joint"  ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <velocity name="ra_elbow_joint_d"         kv="10" joint="ra_elbow_joint"          ctrllimited="true" ctrlrange="-3.14159 3.14159"/>
+        <velocity name="ra_wrist_1_joint_d"       kv="10" joint="ra_wrist_1_joint"        ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <velocity name="ra_wrist_2_joint_d"       kv="10" joint="ra_wrist_2_joint"        ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+        <velocity name="ra_wrist_3_joint_d"       kv="10" joint="ra_wrist_3_joint"        ctrllimited="true" ctrlrange="-6.28319 6.28319"/>
+    
+    </actuator>
+</mujoco>

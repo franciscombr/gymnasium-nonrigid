@@ -1,0 +1,11 @@
+<mujoco>
+    <mesh name="base" file="meshes/arm_and_hand_meshes/visual/ur5/base.stl"  scale="1 1 1" />
+    <mesh name="shoulder" file="meshes/arm_and_hand_meshes/visual/ur5/shoulder.stl"  scale="1 1 1" />
+    <mesh name="upperarm" file="meshes/arm_and_hand_meshes/visual/ur5/upperarm.stl"  scale="1 1 1" />
+    
+    <mesh name="forearm_ur" file="meshes/arm_and_hand_meshes/visual/ur5/forearm.stl"  scale="1 1 1" />
+    
+    <mesh name="wrist1" file="meshes/arm_and_hand_meshes/visual/ur5/wrist1.stl"  scale="1 1 1" />
+    <mesh name="wrist2" file="meshes/arm_and_hand_meshes/visual/ur5/wrist2.stl"  scale="1 1 1" />
+    <mesh name="wrist3" file="meshes/arm_and_hand_meshes/visual/ur5/wrist3.stl"  scale="1 1 1" />    
+</mujoco>

@@ -12,7 +12,7 @@
             <joint name="ARTy" pos="0 0 0" axis="0 1 0" type="slide" range="-0.25 0.25" damping="20" />
             <joint name="ARTz" pos="0 0 0" axis="0 0 1" type="slide" range="-0.2 0.5" damping="10" />
             <joint name="ARRx" pos="0 0 0" axis="1 0 0" range="-.75 .75" damping="20" />
-            <joint name="ARRy" pos="0 0 0" axis="0 1 0" range="-.75 .75" damping="20" />
+            <joint name="ARRy" pos="0 0 0" axis="0 1 0" range="-3.1416 3.1416" damping="20" />
             <joint name="ARRz" pos="0 0 0" axis="0 0 1" range="-.75 .75" damping="20" />
             <!-- shadow hand-->
             <include file="sr_hand_e_plus_model.xml" />
@@ -40,7 +40,7 @@
         <position name="A_ARTy" joint="ARTy" ctrllimited="true" ctrlrange="-0.25 0.25"   kp="500" />
         <position name="A_ARTz" joint="ARTz" ctrllimited="true" ctrlrange="-0.2 0.5"     kp="100000" />
         <position name="A_ARRx" joint="ARRx" ctrllimited="true" ctrlrange="-.75 .75"     kp="5000" />
-        <position name="A_ARRy" joint="ARRy" ctrllimited="true" ctrlrange="-.75 .75"     kp="5000" />
+        <position name="A_ARRy" joint="ARRy" ctrllimited="true" ctrlrange="-3.1416 3.1415"    kp="5000" />
         <position name="A_ARRz" joint="ARRz" ctrllimited="true" ctrlrange="-.75 .75"     kp="5000" />
     </actuator>
 </mujoco>

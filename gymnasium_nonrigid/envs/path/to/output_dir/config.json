@@ -1,0 +1,150 @@
+{
+    "ac_kwargs":	{
+        "activation":	"ReLU",
+        "hidden_sizes":	[
+            64,
+            64
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "clip_ratio":	0.2,
+    "env_fn":	{
+        "<TimeLimit<OrderEnforcing<PassiveEnvChecker<InvertedPendulumEnv<InvertedPendulum-v4>>>>>":	{
+            "_action_space":	null,
+            "_elapsed_steps":	null,
+            "_max_episode_steps":	1000,
+            "_metadata":	null,
+            "_observation_space":	null,
+            "_reward_range":	null,
+            "env":	{
+                "<OrderEnforcing<PassiveEnvChecker<InvertedPendulumEnv<InvertedPendulum-v4>>>>":	{
+                    "_action_space":	null,
+                    "_disable_render_order_enforcing":	false,
+                    "_has_reset":	false,
+                    "_metadata":	null,
+                    "_observation_space":	null,
+                    "_reward_range":	null,
+                    "env":	{
+                        "<PassiveEnvChecker<InvertedPendulumEnv<InvertedPendulum-v4>>>":	{
+                            "_action_space":	null,
+                            "_metadata":	null,
+                            "_observation_space":	null,
+                            "_reward_range":	null,
+                            "checked_render":	false,
+                            "checked_reset":	false,
+                            "checked_step":	false,
+                            "env":	{
+                                "<InvertedPendulumEnv<InvertedPendulum-v4>>":	{
+                                    "_ezpickle_args":	[],
+                                    "_ezpickle_kwargs":	{},
+                                    "action_space":	{
+                                        "Box(-3.0, 3.0, (1,), float32)":	{
+                                            "_np_random":	null,
+                                            "_shape":	[
+                                                1
+                                            ],
+                                            "bounded_above":	"[ True]",
+                                            "bounded_below":	"[ True]",
+                                            "dtype":	"float32",
+                                            "high":	"[3.]",
+                                            "high_repr":	"3.0",
+                                            "low":	"[-3.]",
+                                            "low_repr":	"-3.0"
+                                        }
+                                    },
+                                    "camera_id":	null,
+                                    "camera_name":	null,
+                                    "data":	"<mujoco._structs.MjData object at 0x7f2a2e041ef0>",
+                                    "frame_skip":	2,
+                                    "fullpath":	"/home/francisco/.local/lib/python3.8/site-packages/gymnasium/envs/mujoco/assets/inverted_pendulum.xml",
+                                    "height":	480,
+                                    "init_qpos":	"[0. 0.]",
+                                    "init_qvel":	"[0. 0.]",
+                                    "model":	"<mujoco._structs.MjModel object at 0x7f2a2e041eb0>",
+                                    "mujoco_renderer":	{
+                                        "<gymnasium.envs.mujoco.mujoco_rendering.MujocoRenderer object at 0x7f2a842ee0a0>":	{
+                                            "_viewers":	{},
+                                            "data":	"<mujoco._structs.MjData object at 0x7f2a2e041ef0>",
+                                            "default_cam_config":	{
+                                                "distance":	2.04,
+                                                "trackbodyid":	0
+                                            },
+                                            "model":	"<mujoco._structs.MjModel object at 0x7f2a2e041eb0>",
+                                            "viewer":	null
+                                        }
+                                    },
+                                    "observation_space":	{
+                                        "Box(-inf, inf, (4,), float64)":	{
+                                            "_np_random":	null,
+                                            "_shape":	[
+                                                4
+                                            ],
+                                            "bounded_above":	"[False False False False]",
+                                            "bounded_below":	"[False False False False]",
+                                            "dtype":	"float64",
+                                            "high":	"[inf inf inf inf]",
+                                            "high_repr":	"inf",
+                                            "low":	"[-inf -inf -inf -inf]",
+                                            "low_repr":	"-inf"
+                                        }
+                                    },
+                                    "render_mode":	null,
+                                    "spec":	{
+                                        "EnvSpec(id='InvertedPendulum-v4', entry_point='gymnasium.envs.mujoco.inverted_pendulum_v4:InvertedPendulumEnv', reward_threshold=950.0, nondeterministic=False, max_episode_steps=1000, order_enforce=True, autoreset=False, disable_env_checker=False, apply_api_compatibility=False, kwargs={}, namespace=None, name='InvertedPendulum', version=4)":	{
+                                            "apply_api_compatibility":	false,
+                                            "autoreset":	false,
+                                            "disable_env_checker":	false,
+                                            "entry_point":	"gymnasium.envs.mujoco.inverted_pendulum_v4:InvertedPendulumEnv",
+                                            "id":	"InvertedPendulum-v4",
+                                            "kwargs":	{},
+                                            "max_episode_steps":	1000,
+                                            "name":	"InvertedPendulum",
+                                            "namespace":	null,
+                                            "nondeterministic":	false,
+                                            "order_enforce":	true,
+                                            "reward_threshold":	950.0,
+                                            "version":	4
+                                        }
+                                    },
+                                    "width":	480
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "epochs":	2,
+    "exp_name":	"experiment_name",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f2a2dfe7370>":	{
+            "epoch_dict":	{},
+            "exp_name":	"experiment_name",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"path/to/output_dir",
+            "output_file":	{
+                "<_io.TextIOWrapper name='path/to/output_dir/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"experiment_name",
+        "output_dir":	"path/to/output_dir"
+    },
+    "max_ep_len":	1000,
+    "pi_lr":	0.0003,
+    "save_freq":	10,
+    "seed":	0,
+    "steps_per_epoch":	5000,
+    "target_kl":	0.01,
+    "train_pi_iters":	80,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}

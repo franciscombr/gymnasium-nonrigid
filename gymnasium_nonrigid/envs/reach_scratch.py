@@ -494,9 +494,9 @@ class MujocoPyHandReachEnv(get_base_hand_reanch_env(MujocoPyHandEnv)):
             )
         self.sim.forward()
 
-env = MujocoHandReachEnv()
-env.render_mode = "human"
-env._env_setup(DEFAULT_INITIAL_QPOS)
-a = np.zeros((20,))
+# env = MujocoHandReachEnv()
+# env.render_mode = "human"
+# env._env_setup(DEFAULT_INITIAL_QPOS)
+# a = np.zeros((20,))
 
-env.step(a)
+# env.step(a)
